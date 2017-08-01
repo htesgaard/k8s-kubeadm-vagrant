@@ -44,5 +44,7 @@ kubectl apply -f kube-flannel.yml
 
 To join the agents join the cluster using the command:
 ```
-sudo kubeadm join --token 8c2350.f55343444a6ffc46 192.168.33.10:6443
+sudo kubeadm join --token 8c2350.f55343444a6ffc46 192.168.33.10:6443 --skip-preflight-checks
 ```
+
+

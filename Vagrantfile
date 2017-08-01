@@ -3,11 +3,11 @@
 
 Vagrant.configure("2") do |config|
     config.vm.box = "ubuntu/xenial64"
-    config.vm.boot_timeout = 180
+#   config.vm.boot_timeout = 180
 
     config.vm.provider "virtualbox" do |v|
-      v.gui = true
-      v.memory = 2048
+#     v.gui = true
+      v.memory = 3072
       v.cpus = 2
     end
 
